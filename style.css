@@ -16,7 +16,9 @@ header {
     display: grid;
     grid-template-columns: 1fr 1fr;
     width: 100%;
-    justify-content: space-around;
+    justify-content: space-evenly;
+    justify-content: center;
+    margin-bottom: 70px;
 }
 
 .header-left {
@@ -27,6 +29,11 @@ header {
     line-height: 48px;
     letter-spacing: -0.045em;
     color: #000000;
+}
+
+.header-right {
+    justify-self: flex-end;
+
 }
 
 
@@ -69,7 +76,7 @@ header {
 
 .image img {
     width: 245px;
-    height: 328px;
+    height: 348px;
     display: block;
 }
 
