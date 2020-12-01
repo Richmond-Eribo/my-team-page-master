@@ -57,7 +57,15 @@ header {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     /* grid-template-rows: repeat(3, 1fr); */
-    gap: 0px 0px;
+    gap: 35px 0px;
+}
+
+.two {
+    transform: translateY(50px);
+}
+
+.five {
+    transform: translateY(50px);
 }
 
 .image img {
@@ -148,7 +156,19 @@ footer p {
         max-height: 200px;
         display: block;
     }
+
+    .two {
+        transform: translateY(30px);
+    }
+
+    .four {
+        transform: translateY(30px);
+    }
     
+    .six {
+        transform: translateY(30px);
+    }
+
     .grid-container {
         background-color: darkorchid;
     }
