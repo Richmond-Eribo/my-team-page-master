@@ -145,10 +145,18 @@ footer p {
     }
 
     header {
-        background: darkturquoise;
         display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: 1fr 1fr;
+    }
+
+
+    .header-left {
+        justify-self: flex-start;
+    }
+    .header-right {
+        justify-self: flex-start;
+
     }
 
     .header-right p {
@@ -175,8 +183,16 @@ footer p {
         transform: translateY(30px);
     }
 
+    .five {
+        transform: translateY(0);
+    }
+
     .grid-container {
+        visibility: hidden;
         background-color: darkorchid;
+        display: grid;
+        grid-template-columns: 50% 50%;
+        
     }
 }
 
