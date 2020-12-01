@@ -15,11 +15,8 @@ main {
 header {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    justify-content: center;
-    height: 190px;
     width: 100%;
     justify-content: space-around;
-    /* background-color:olive ; */
 }
 
 .header-left {
@@ -32,12 +29,6 @@ header {
     color: #000000;
 }
 
-/* .header-left h4 {
-} */
-
-/* .header-right {
-    background-color: yellow;
-} */
 
 .header-right h5 {
     font-family: 'Poppins', sans-serif;
@@ -74,6 +65,7 @@ header {
     height: 328px;
     display: block;
 }
+
 .name {
     font-family: 'Poppins', sans-serif;
     font-style: normal;
@@ -117,10 +109,9 @@ footer p {
 
 @media (max-width: 1200px) {
     header {
-    display: flex;
-       flex-direction: column;
-       justify-content:  center;
-       align-content: center;
+       display: grid;
+       grid-template-columns: 1fr;
+       grid-template-rows: 50px 90px;
        margin-bottom: 70px;
     }
 
@@ -133,4 +124,33 @@ footer p {
     }
 }
 
+
+@media (max-width: 428px) {
+    main {
+        padding: 70px 10px;
+    }
+
+    header {
+        background: darkturquoise;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+
+    .header-right p {
+        font-size: 14px;
+        line-height: 21px;
+        width: 330px;
+    }
+
+    .image img {
+        width: 138px;
+        max-height: 200px;
+        display: block;
+    }
+    
+    .grid-container {
+        background-color: darkorchid;
+    }
+}
 
