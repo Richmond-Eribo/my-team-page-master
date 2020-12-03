@@ -1,9 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=PT+Serif:wght@700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
 
+
+
 .grid-container {
+    margin: 0;
+    padding: 0;
+    /* width: 100vw; */
+
     display: grid;
-    grid-template-columns: 120px 2fr 120px;
+    grid-template-columns: 0.5fr 5fr 0.5fr;
     grid-template-rows: 280px 1fr 100px 30px;
     gap: 0px 0px;
     grid-template-areas:
@@ -141,13 +147,13 @@
 }
 
 
-@media (max-width: 2000px) {
+/* @media (max-width: 2000px) {
     .grid-container {
         display: grid;
         grid-template-columns: 230px 1fr 230px;
         grid-template-rows: 280px 1fr 100px 30px;
     }
-}
+} */
 
 
 @media (max-width: 1050px) {
